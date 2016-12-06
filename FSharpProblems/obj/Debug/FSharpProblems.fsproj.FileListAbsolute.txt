@@ -1,0 +1,7 @@
+D:\Deliberate_Practice\FSharpProblems\FSharpProblems\bin\Debug\FSharpProblems.XML
+D:\Deliberate_Practice\FSharpProblems\FSharpProblems\bin\Debug\FSharpProblems.dll
+D:\Deliberate_Practice\FSharpProblems\FSharpProblems\bin\Debug\FSharpProblems.pdb
+D:\Deliberate_Practice\FSharpProblems\FSharpProblems\bin\Debug\FSharp.Core.dll
+D:\Deliberate_Practice\FSharpProblems\FSharpProblems\bin\Debug\FSharp.Core.xml
+D:\Deliberate_Practice\FSharpProblems\FSharpProblems\obj\Debug\FSharpProblems.dll
+D:\Deliberate_Practice\FSharpProblems\FSharpProblems\obj\Debug\FSharpProblems.pdb
