@@ -149,3 +149,24 @@ type Problem5Tests() =
         elements
             |> Problem5.reverse2
             |> should equal ['d';'c';'b';'a']
+
+[<TestFixture>]
+type Problem6Tests() =
+    [<Test>]
+    member this.``Given a [1;2;3] should return false``() = 
+        [1;2;3]
+        |> Problem6.isPalindrome
+        |> should equal false
+
+    [<Test>]
+    member this.``Given a [1;2;2;1] should return true``() = 
+        [1;2;2;1]
+        |> Problem6.isPalindrome
+        |> should equal true
+
+    [<Test>]
+    member this.``Given a [mom] should return true``() = 
+        let elements = (List.ofSeq("mom"))
+        elements
+            |> Problem6.isPalindrome2
+            |> should equal true

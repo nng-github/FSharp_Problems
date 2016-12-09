@@ -69,5 +69,22 @@ module Problem5 =
     let reverse2 elements = 
         let rec rev acc = function 
             | [] -> acc
-            | x::elements -> rev (x::acc) elements
+            | head::tail -> rev (head::acc) tail
         rev [] elements
+
+module Problem6 = 
+    let rev elements = 
+        elements
+        |> List.rev
+
+    let isPalindrome elements  = 
+        let recs = rev elements
+        match elements with
+            | [] -> true
+            | [x] -> true
+            | x when x = rev elements -> true
+            | _ -> false
+
+    let isPalindrome2 elements  = 
+        elements
+        |> List.rev = elements
