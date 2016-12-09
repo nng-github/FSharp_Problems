@@ -120,3 +120,32 @@ type Problem3Tests() =
         let result = Problem3.elementAt2 elements 5
         result 
             |> should equal 'r'
+
+[<TestFixture>]
+type Problem4Tests() = 
+    [<Test>]
+    member this.``Given a list with no elements should return zero``() = 
+        []
+        |> Problem4.myLength
+        |> should equal 0 
+    
+    [<Test>]
+    member this.``Given a list with two elements should return two``() = 
+        [222;888]
+        |> Problem4.myLength
+        |> should equal 2
+
+[<TestFixture>]
+type Problem5Tests() = 
+    [<Test>]
+    member this.``Given [1;2;3] should return [3;2;1]``() =
+        [1;2;3]
+        |> Problem5.reverse
+        |> should equal [3;2;1]
+
+    [<Test>]
+    member this.``Given [a;b;c;d] should return [d;c;b;a]``() =
+        let elements = (List.ofSeq("abcd"))
+        elements
+            |> Problem5.reverse2
+            |> should equal ['d';'c';'b';'a']

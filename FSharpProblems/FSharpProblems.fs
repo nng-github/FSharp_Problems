@@ -55,3 +55,19 @@ module Problem3 =
         | [],_ -> failwith "error"
         | head::tail, 1 -> head
         | head::tail, n -> elementAt2 tail (n-1)
+
+module Problem4 =
+    let myLength elements = 
+        elements
+        |> List.length
+
+module Problem5 = 
+    let reverse elements = 
+        elements
+        |> List.rev
+
+    let reverse2 elements = 
+        let rec rev acc = function 
+            | [] -> acc
+            | x::elements -> rev (x::acc) elements
+        rev [] elements
